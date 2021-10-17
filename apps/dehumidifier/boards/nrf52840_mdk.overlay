@@ -1,0 +1,12 @@
+/ {
+    dehumidifier {
+    	status = "okay";
+        compatible = "zephyr,dehumidifier";
+        label = "Dehumidifier";
+        ionizer-gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+        fan-half-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+        fan-full-gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+        compressor-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
+        waterbox-gpios = <&gpio0 20 (GPIO_PULL_UP | GPIO_ACTIVE_HIGH)>;
+    };
+};

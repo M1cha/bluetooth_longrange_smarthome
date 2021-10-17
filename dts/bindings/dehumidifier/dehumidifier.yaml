@@ -1,0 +1,23 @@
+description: dehumidifier node
+compatible: "zephyr,dehumidifier"
+include: base.yaml
+properties:
+    ionizer-gpios:
+      required: true
+      type: phandle-array
+
+    fan-half-gpios:
+      required: true
+      type: phandle-array
+
+    fan-full-gpios:
+      required: true
+      type: phandle-array
+
+    compressor-gpios:
+      required: true
+      type: phandle-array
+
+    waterbox-gpios:
+      required: true
+      type: phandle-array
